@@ -1,11 +1,11 @@
 <?php
-phpinfo();
+
 $mysqli = mysqli_connect(
-    getenv('OPENSHIFT_MYSQL_DB_HOST'), 
-    getenv('OPENSHIFT_MYSQL_DB_USERNAME'), 
-    getenv('OPENSHIFT_MYSQL_DB_HOST'), 
-    getenv('OPENSHIFT_MYSQL_DB_PASSWORD'),
-    getenv('OPENSHIFT_MYSQL_DB_PORT')
+    getenv('MARIADBCONSYS_SERVICE_HOST'), 
+    getenv('MYSQL_USER'), 
+    getenv('MYSQL_ROOT_PASSWORD'), 
+    getenv('MYSQL_DATABASE'),
+    getenv('MARIADBCONSYS_SERVICE_PORT')
 );
 
 if (!$link) {
