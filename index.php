@@ -2,9 +2,9 @@
 
 $mysqli = mysqli_connect(
     getenv('MARIADBCONSYS_SERVICE_HOST'), 
-    getenv('MYSQL_USER'), 
-    getenv('MYSQL_ROOT_PASSWORD'), 
-    getenv('MYSQL_DATABASE'),
+    'consys', 
+    'consys2017!', 
+    'consys',
     getenv('MARIADBCONSYS_SERVICE_PORT')
 );
 
